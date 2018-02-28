@@ -1,4 +1,5 @@
-USE AdventureWorksDW2012;
+USE AdventureWorks2012;
+
 /*a.	A customer has $1000 budget to spend on a single bike. Show the Product ID, Product Name, Price, and Color of each bike that she can purchase. These should be sorted by price in ascending order. */
 
 SELECT p.ProductID, p.Name AS Product_Name, p.ListPrice, p.Color

@@ -9,7 +9,7 @@ use AdventureWorksDW2012;
 /*List all the sales processed by these Sales Representatives */
 
 
-/*who is a better sales representative that was born in February?*/
+/*who is a better sales representative among those who were born in February?*/
  
  
 /* Find a better way to compare these two salespersons?*/

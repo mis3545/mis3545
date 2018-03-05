@@ -17,13 +17,13 @@ CREATE TABLE Course(
 
 CREATE TABLE CourseEnrollment(
   EnrollmentID bigint NOT NULL PRIMARY KEY,
-  StudentId bigint NOT NULL,
+  StudentID bigint NOT NULL,
   CourseID bigint NOT NULL,
   Grade float NOT NULL);
 
 -- Create the relationship: the first FK in CourseEnrollment
 ALTER TABLE CourseEnrollment ADD CONSTRAINT FK_CourseEnrollment_Student 
-FOREIGN KEY (StudentId) REFERENCES Student(StudentID);
+FOREIGN KEY (StudentID) REFERENCES Student(StudentID);
 GO
 
 -- We will use designer view to create another relationship: the second FK in CourseEnrollment
@@ -76,7 +76,7 @@ CREATE VIEW vwStudentGradeSummary WITH SCHEMABINDING AS
    ISNULL(SUM(ce.Grade), 0) AS TotalGrade
   FROM
    dbo.Student AS s
-   LEFT OUTER JOIN dbo.CourseEnrollment AS ce ON s.StudentID = ce.StudentId
+   LEFT OUTER JOIN dbo.CourseEnrollment AS ce ON s.StudentID = ce.StudentID
   GROUP BY
    s.StudentID, s.FirstName, s.LastName
 GO

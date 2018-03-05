@@ -52,7 +52,7 @@ INSERT INTO Course(CourseID, CourseTitle, Instuctor) VALUES
 (5, 'SME2012-MANAGING INFORMATION TECH AND SYSTEMS', 'Clare');
 GO
 
--- Delete the SME course
+-- If we want to delete SME2012
 DELETE FROM Course
 WHERE CourseTitle like 'SME%';
 GO 

@@ -78,7 +78,7 @@ You have to create the following queries. For each query, you need to use commen
 
 3. A query that selects records from two (or multiple) tables using `INNER JOIN`.
 
-4. A query that selects records from two (or multiple) tables using `LEFT OUTER JOIN` (or `RIGHT OUTER JOIN` or `FULL OUTER JOIN`). Specify why outer join is neccesary in comment block. Make sure your fake data could reflect the necessary. If it could not, you need to go back to part 2 to redo the data insertion, or you can use `INSERT INTO`, `UPDATE` or `DELETE` statements to modify the existing data.
+4. A query that selects records from two (or multiple) tables using `LEFT OUTER JOIN` (or `RIGHT OUTER JOIN` or `FULL OUTER JOIN`). Specify why outer join is neccesary in comment block. Make sure your fake data could reflect the necessity. If it could not, you need to go back to part 2 to redo the data insertion, or you can use `INSERT INTO`, `UPDATE` or `DELETE` statements to modify the existing data.
 
 5. A query that uses subquery.
 

@@ -23,7 +23,7 @@ babson.tweets <- searchTwitter('babson', n=150)
 Export extracted tweets into an Excel (.csv) document
 ```{r}
 outputList <- twListToDF(babson.tweets)
-write.csv(outputList,"./twitter/babson_tweets.csv")
+write.csv(outputList,"./babson_tweets.csv")
 
 ```
 
@@ -62,8 +62,8 @@ head(babson.text, 5)
 Estimating Sentiment
 Load sentiment word lists
 ```{r}
-pos.words <- scan('./twitter/positive-words.txt', what='character', comment.char=';')
-neg.words <- scan('./twitter/negative-words.txt', what='character', comment.char=';')
+pos.words <- scan('./positive-words.txt', what='character', comment.char=';')
+neg.words <- scan('./negative-words.txt', what='character', comment.char=';')
 ```
 
 Let's first see a example using the score.sentiment function
